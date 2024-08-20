@@ -1,25 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="auhtor" content="MehdiA7" />
+        <meta charset="UTF-8">
         <title>Shopping List</title>
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div id="box">
-            <div class="center">
-                <h1>Shopping List</h1>
-            </div>
-            <div id="divInputUser" class="center">
-                <label for="item">What do you want ?</label>
-                <input id="item" type="text" />
-                <input id="save" type="submit" value="save" />
-            </div>
-            <div id="divList" class="center">
-                <ul id="list"></ul>
-            </div>
+        <h1 id="mainTitle">SHOP</h1>
+        <div id="userInput">
+            <label for="input">What do you want ?</label>
+            <input id="input" type="text" placeholder="Enter item">
+            <button id="saveButton" type="submit">save</button>
         </div>
-        <script src="./app.js"></script>
+        <div id="divList">
+            <ul id="shoppingList"></ul>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
