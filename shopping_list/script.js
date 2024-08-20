@@ -1,3 +1,6 @@
+// Prochaine feature : Supprimer toute la liste
+// Prochaine amélioration : Esthétique
+
 const input = document.getElementById("input");
 const saveButton = document.getElementById("saveButton");
 const shoppingList = document.getElementById("shoppingList");
