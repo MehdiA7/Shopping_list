@@ -13,6 +13,7 @@ const addItemToList = () => {
         // delete button
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
+        deleteButton.classList.add("deleteButton");
         deleteButton.style.marginLeft = "10px";
 
         deleteButton.addEventListener("click", () => {

@@ -1,4 +1,16 @@
-
+#allBlock {
+    text-align: center;
+    margin: 10% 20%;
+    border-style: solid;
+    border-radius: 20%;
+    background-color: antiquewhite;
+}
 ul {
     list-style-type: none;
+}
+#saveButton:hover {
+    color: green;
+}
+.deleteButton:hover {
+    color: red;
 }
