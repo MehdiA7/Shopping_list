@@ -1,6 +1,35 @@
 body {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputField1, #inputField2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 300px; /* Tu peux ajuster selon tes besoins */
+}
+
 label {
-    margin-right: 15px;
+    margin-right: 10px;
+    width: 100px;
+    text-align: right;
+}
+
+input[type="text"], input[type="password"] {
+    width: 200px; /* Ajuster selon la largeur désirée */
+}
+
+#submit {
+    margin-top: 20px;
+    width: 150px;
 }
