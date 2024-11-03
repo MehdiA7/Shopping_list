@@ -1,19 +1,144 @@
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style principal du conteneur */
 #allBlock {
     text-align: center;
-    margin: 10% 20%;
-    border-style: solid;
-    border-radius: 20%;
-    background-color: antiquewhite;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 400px;
+    width: 90%;
 }
-ul {
-    list-style-type: none;
+
+/* Style du titre principal */
+#mainTitle {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
+
+/* Zone d'input utilisateur */
+#userInput label {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+#input {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 70%;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+#saveButton {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 0.5rem;
+}
+
 #saveButton:hover {
-    color: green;
+    background-color: #43a047;
 }
-.deleteButton:hover {
-    color: red;
+
+/* Style de la liste des items */
+#divList {
+    margin-top: 2rem;
 }
-p {
-    display: inline;
+
+#shoppingList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de la liste */
+#shoppingList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    color: #444;
+}
+
+#shoppingList li p {
+    margin: 0 10px;
+    font-size: 1rem;
+}
+
+/* Style des boutons de modification de quantité */
+button#addButton,
+button#removeButton,
+button#deleteButton {
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+}
+
+button#addButton {
+    background-color: #4caf50;
+}
+
+button#addButton:hover {
+    background-color: #43a047;
+}
+
+button#removeButton {
+    background-color: #ffa000;
+}
+
+button#removeButton:hover {
+    background-color: #ff8f00;
+}
+
+button#deleteButton {
+    background-color: #e53935;
+}
+
+button#deleteButton:hover {
+    background-color: #d32f2f;
+}
+
+/* Style du bouton "Clear All" */
+#clearAll {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e53935;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+#clearAll:hover {
+    background-color: #d32f2f;
 }
