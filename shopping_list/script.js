@@ -1,5 +1,4 @@
-// Prochaine feature : Doublons et supprimer toute la liste
-// Prochaine amélioration : Esthétique
+// Prochaine feature : Ne pas prendre en compte les maj
 
 const input = document.getElementById("input");
 const saveButton = document.getElementById("saveButton");
@@ -8,9 +7,15 @@ const clearAll = document.getElementById("clearAll");
 // create an object array
 let itemObject = [];
 
+function capitalizeFirstLetter(string) {
+    string = string.toLowerCase();
+    return  String(string).charAt(0).toUpperCase() + String(string).slice(1);
+}
+
 const addItemToList = () => {
-    // hide useless space
-    const cleanInput = input.value.trim();
+    // hide useless space and capitalize first letter and lowercase
+    let cleanInput = input.value.trim();
+    cleanInput = capitalizeFirstLetter(cleanInput);
 
     if (cleanInput !== "") {
         // verfication
